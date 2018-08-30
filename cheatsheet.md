@@ -80,25 +80,60 @@ this is aligning elements in vertical space.  */
 
 /* The next set of properties are about the individual flex-items, or the li’s in this example. */
 
-8. .flex2{ border: 2px dotted blue; order: ***; }
-*** can be an integer.
-1 will move the .flex2 boxes to the end of the list, while -1 will move them to the start of the list. 0 is neutral. The border styling is to help us differentiate between the li’s with the .flex2 class and those that don’t have it.
+8. 
+.flex2 { 
+    border: 2px dotted blue; 
+    order: ***; 
+}
+/* *** can be an integer.
+1 will move the .flex2 boxes to the end of the list, 
+while -1 will move them to the start of the list. 0 is neutral. 
+The border styling is to help us differentiate between the li’s with the .flex2 class and those that don’t have it. */
 
-9. .flex2{ border: 2px dotted blue; flex-basis: ***; }
-flex-basis is analogous to width, but not quite the same thing. Width is an absolute measurement — an element is that wide, all the time. We can measure width in relative units (say 25% instead of 250px), but in the end, the measurement itself never changes. For flex-basis, we try to achieve a given width with the space available. It could be smaller than this width, or it could be wider, depending on the extra space and how that’s supposed to be distributed. Distribution of extra space is controlled by flex-grow and flex-shrink (below).
+9. 
+.flex2 { 
+    border: 2px dotted blue; 
+    flex-basis: ***; 
+}
+/* flex-basis is analogous to width, but not quite the same thing. 
+Width is an absolute measurement — an element is that wide, all the time. 
+We can measure width in relative units (say 25% instead of 250px), but in the end, the measurement itself never changes.  */
 
-10. .flex2{ border: 2px dotted blue; flex-grow: ***; }
-*** can be 0 or a positive integer. (It won’t break with a negative integer, but it won’t do anything either.)
-Flex-grow, like flex-shrink (below), distributes extra space once each element is displayed on the page. In this example, our flex-items are center-aligned (see justify-content: center on the ul). By assigning a value to flex-grow, any extra space will be assigned in greater proportion to this element, making it larger relative to the other items. Note there is no unit with this measurement — it’s simply a proportion.
+/* For flex-basis, we try to achieve a given width with the space available. 
+It could be smaller than this width, or it could be wider, 
+depending on the extra space and how that’s supposed to be distributed. 
+Distribution of extra space is controlled by flex-grow and flex-shrink (below). */
 
-11. .flex2{ border: 2px dotted blue; flex-shrink: ***; }
-*** can be 0 or a positive integer. (It won’t break with a negative integer, but it won’t do anything either.)
-Flex-shrink controls what happens to extra space as elements shrink.  By assigning a value to flex-shrink, as elements get smaller on the page, this element will get smaller faster than the others. Note there is no unit with this measurement — it’s simply a proportion.
+10. 
+.flex2 { 
+    border: 2px dotted blue; 
+    flex-grow: ***; 
+}
+/* *** can be 0 or a positive integer. (It won’t break with a negative integer, but it won’t do anything either.)
+Flex-grow, like flex-shrink (below), distributes extra space once each element is displayed on the page. 
+In this example, our flex-items are center-aligned (see justify-content: center on the ul). 
+By assigning a value to flex-grow, any extra space will be assigned in greater proportion to this element, making it larger relative to the other items. 
+Note there is no unit with this measurement — it’s simply a proportion. */
 
-12. .flex2{ border: 2px dotted blue; flex: G S B; }
+11. 
+.flex2 { 
+    border: 2px dotted blue; 
+    flex-shrink: ***; 
+}
+/* *** can be 0 or a positive integer. (It won’t break with a negative integer, but it won’t do anything either.)
+Flex-shrink controls what happens to extra space as elements shrink. 
+By assigning a value to flex-shrink, as elements get smaller on the page, this element will get smaller faster than the others. 
+Note there is no unit with this measurement — it’s simply a proportion. */
+
+12. 
+.flex2 { 
+    border: 2px dotted blue; 
+    flex: G S B; 
+}
+/* 
 G = flex-grow
 S = flex-shrink
 B = flex-basis
-This is the shorthand for combining flex-grow, flex-shrink, and flex-basis. 
+This is the shorthand for combining flex-grow, flex-shrink, and flex-basis.  */
 
 ```
