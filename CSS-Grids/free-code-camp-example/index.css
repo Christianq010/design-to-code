@@ -2,12 +2,12 @@
     height: 100%;
     display: grid;
     grid-gap: 3px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40px auto 40px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px auto 150px;
 }
 
 .header {
-   
+    grid-column: 1/-1; /* span full width of all columns */
 }
 
 .menu {
@@ -15,9 +15,12 @@
 }
 
 .content {
-    
+    grid-column: 2/-1;
 }
 
 .footer {
-    
+    grid-column: 1/-1;
+}
+.footer-two {
+    grid-column: 4/13;
 }
