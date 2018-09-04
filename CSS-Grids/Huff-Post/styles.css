@@ -1,0 +1,23 @@
+/* Mobile first by default */
+
+/* Our  Main Container */
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px auto 150px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 550px) { 
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 850px) { 
+    /* Navbar */
+    .navbar {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+    }
+} 
