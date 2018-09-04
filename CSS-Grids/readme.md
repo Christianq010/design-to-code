@@ -6,3 +6,6 @@
 
 ## Video lessons
 * freecodecamp course - https://scrimba.com/g/gR8PTE, youtube - https://www.youtube.com/watch?v=t6CBKf8K_Ac
+
+### Fallbacks and Overides
+* https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks
