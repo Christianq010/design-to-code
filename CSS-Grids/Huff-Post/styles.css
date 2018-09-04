@@ -4,8 +4,8 @@
 .container {
     display: grid;
     grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px auto 150px;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 78px 480px;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -15,9 +15,50 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) { 
+
     /* Navbar */
-    .navbar {
+    .hamburger-menu {
         grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .logo {
+        grid-row: 1 / 2;
+        grid-column: 6 / 11;
+    }
+    .social-icons {
+        grid-row: 1 / 2;
+        grid-column: 11 / -1;
+    }
+
+    /* Main Section */
+    .bg-img {
+        grid-row: 2 / 3;
         grid-column: 1 / -1;
     }
+
+    /* Section One - Left */
+    .sec-1-left {
+        grid-row: 3 / 4;
+        grid-column: 2 / 6;
+        height: 680px;
+    }
+    
+    /* Section Two - Center */
+    .sec-2-center {
+        grid-row: 3 / 4;
+        grid-column: 6 / 11;
+        height: 850px;
+    }
+
+    /* Section Three - Right */
+    .sec-3-right {
+        grid-row: 3 / 4;
+        grid-column: 11 / 14;
+        height: 550px;
+    }
+    .sec-4-right {
+        grid-row: 4 / 5;
+        grid-auto-columns: 4 / 5;
+    }
+
 } 
