@@ -35,9 +35,46 @@ _Notes: -1 spans full width of all columns_
     grid-column: 1/-1;
 } 
 ```
-
 ## Layouts with grid area
-* Each column will always be a minimum of 250px, if >250px it will distribute remaining space eqally.
+
+```html
+<div class="container">
+    <div class="header">HEADER</div>
+    <div class="menu">MENU</div>
+    <div class="content">CONTENT</div>
+    <div class="footer">FOOTER</div>
+</div>
+```
+
+```css
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px auto 150px;
+    grid-template-areas: 
+        "m m m h h h h h h h h h"
+        "m m m c c c c c c c c c"
+        ". f f f f f f f f f f .";
+}
+.header {
+    grid-area: h; 
+}
+.menu {
+    grid-area: m;
+}
+.content {
+    grid-area: c;
+}
+.footer {
+    grid-area: f;
+}
+```
+
+## Responsive layouts with minmax
+_Note:Each column will always be a minimum of 250px, if >250px each `div` will increase in size and it will distribute the remaining space eqally._
+* Each `div` without explicit defined width will always be `250px`.
 
 ```html
 <div class="container">
@@ -59,5 +96,6 @@ _Notes: -1 spans full width of all columns_
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(3, 250px);
+    grid-auto-rows: 250px;
 }
 ```
