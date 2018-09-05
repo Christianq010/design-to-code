@@ -99,3 +99,49 @@ _Note:Each column will always be a minimum of 250px, if >250px each `div` will i
     grid-auto-rows: 250px;
 }
 ```
+
+## Responsive layouts - image gallery
+* We fix blank spaces with `grid-auto-flow: dense;` at any width.
+
+```html
+    <div class="container">
+        <div><img src="img/normal1.jpg"/></div>
+        <div class="vertical"><img src="img/vertical1.jpg"/></div>
+        <div class="horizontal"><img src="img/horizontal1.jpg"/></div>
+        <div><img src="img/normal2.jpg"/></div>
+        <div><img src="img/normal3.jpg"/></div>
+        <div class="big"><img src="img/big1.jpg"/></div>
+        <div><img src="img/normal4.jpg"/></div>
+        <div class="vertical"><img src="img/vertical2.jpg"/></div>
+        <div><img src="img/normal5.jpg"/></div>
+        <div class="horizontal"><img src="img/horizontal2.jpg"/></div>
+        <div><img src="img/normal6.jpg"/></div>
+        <div class="big"><img src="img/big2.jpg"/></div>
+        <div><img src="img/normal7.jpg"/></div>
+        <div class="horizontal"><img src="img/horizontal3.jpg"/></div>
+        <div><img src="img/normal8.jpg"/></div>
+        <div class="big"><img src="img/big3.jpg"/></div>
+        <div><img src="img/normal9.jpg"/></div>
+        <div class="vertical"><img src="img/vertical3.jpg"/></div>
+    </div>
+```
+
+```css
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+}
+.horizontal {
+    grid-column: span 2;
+}
+.vertical {
+    grid-row: span 2;
+}
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+```
