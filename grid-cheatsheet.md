@@ -35,3 +35,29 @@ _Notes: -1 spans full width of all columns_
     grid-column: 1/-1;
 } 
 ```
+
+## Layouts with grid area
+* Each column will always be a minimum of 250px, if >250px it will distribute remaining space eqally.
+
+```html
+<div class="container">
+    <div class="1">1</div>
+    <div class="2">2</div>
+    <div class="3">3</div>
+    <div class="4">4</div>
+    <div class="5">5</div>
+    <div class="6">6</div>
+    <div class="7">7</div>
+    <div class="8">8</div>
+    <div class="9">9</div>
+</div>
+```
+
+```css
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 250px);
+}
+```
