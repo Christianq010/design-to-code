@@ -1,34 +1,10 @@
+/* Layout with minmax */
+
 .container {
-    height: 100%;
+    /* height: 100%; */
     display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px auto 150px;
-    grid-template-areas: 
-        "m m m h h h h h h h h h"
-        "m m m c c c c c c c c c"
-        ". f f f f f f f f f f .";
-}
-
-/* 1 / -1 span full width of all columns */
-
-
-.header {
-    
-    grid-area: h; 
-}
-
-.menu {
-    
-    grid-area: m;
-}
-
-.content {
-    
-    grid-area: c;
-}
-
-.footer {
-    
-    grid-area: f;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 250px);
+    grid-auto-rows: 250px;
 }
