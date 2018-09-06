@@ -40,7 +40,7 @@ body {
 }
 .nav-wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 3fr 8fr 2fr 1fr;
     grid-template-rows: 78px;
     grid-gap: 3px;
 
@@ -55,6 +55,10 @@ body {
     width: 25px;
     font-size: 1.75em;
     padding-left: 1em;
+}
+.menu-icn:hover {
+    color: #0DBE98;
+    cursor: pointer;
 }
 .logo {
     display: flex;
@@ -72,6 +76,20 @@ body {
 }
 .social-icons svg {
     margin: 0 5px 0 0;
+}
+.language-selection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.language-editions-text {
+    color: white;
+    font-size: 0.625rem;
+    letter-spacing: 1.3px;
+}
+.language-editions-text:hover{
+    color: #0DBE98;
+    cursor: pointer;
 }
 
 /* Main Section */
