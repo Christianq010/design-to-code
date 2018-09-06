@@ -193,7 +193,57 @@ body {
         grid-row: 14 / 16;
         grid-column: 1 / -1;
     }
+    /* Huffing Post Zone Center */
+    .hp-z-center {
 
+    }
+    .hp-z-center-box {
+        
+    }
+    .hp-z-center-img-wrapper {
+    }
+    .hp-z-center-img {
+        max-width: 100%;
+    }
+    .hp-z-center-headline {
+        padding: 0.5em 1em;
+    }
+    .hp-z-center-link {
+
+    }
+    .hp-z-center-text {
+        font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+        font-size: 2.375rem;
+        line-height: 2.375rem;
+        letter-spacing: 0.5px;
+    }
+    /* HP Zone Center Details */
+    .hp-z-center-details {
+        padding: 0.5em 1em;
+    }
+    .hp-z-center-des {
+        margin: 0.5em 0;
+    }
+    .hp-z-center-des-link {
+
+    }
+    .hp-z-center-des-text {
+        font-family: "ProximaNovaLight", Arial, Geneva, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+    }
+    .hp-z-center-author{
+        margin: 0.8em 0;
+    }
+    .hp-z-center-author-link{}
+    .hp-z-center-author-text{
+        color: #F83371;
+        font-size: 0.8125rem;
+        line-height: 0.9375rem;
+        font-weight: normal;
+    }
+
+/* ------------------------------ */
     /* Section Three - Right */
     .sec-3-right {
         grid-row: 16 / 18;
