@@ -7,6 +7,11 @@
 }
 
 @font-face {
+    font-family: ProximaNovaLight;
+    src: url("font/MARK\ SIMONSON\ -\ PROXIMA\ NOVA\ LIGHT.OTF") format("opentype");
+}
+
+@font-face {
     font-family: ProximaNovaBold;
     font-weight: bold;
     src: url("font/MARK\ SIMONSON\ -\ PROXIMA\ NOVA\ BOLD.OTF") format("opentype");
@@ -17,6 +22,9 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+a:hover {
+    cursor: pointer;
 }
 body {
 	font-family: "ProximaNovaregular", Arial, Geneva, sans-serif;
@@ -73,7 +81,6 @@ body {
         height: 2em;
         width: 10em;
         display: block;
-        margin: 1.5rem auto;
     }
     /* Toggle Icon for mobile */
     /* Social Icons */
@@ -297,8 +304,52 @@ body {
         grid-row: 8 / 14;
         grid-column: 2 / 5;
         /* height: 680px; */
+        /* Styling */
+        background-color: grey;
     }
-    
+    .top-title-flag {
+        font-style: italic;
+        background: #F83371;
+        color: #ffffff;
+    }
+    .top-title-flag h1 {
+        padding: 0 15px;
+        font-size: 1.0625rem;
+        font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+        letter-spacing: 0.12em;
+        padding-top: 3px;
+    }
+    .tp-main-card-img {
+        max-width: 100%;
+    }
+    .tp-main-card-details {
+        border-bottom: 1px solid black;
+    }
+    .tp-main-card-link:hover {
+        text-decoration: underline;
+    }
+    .tp-main-card-text {
+        /* font-family: "ProximaNovaLight", Arial, Geneva, sans-serif; */
+        margin-bottom: 1em;
+    }
+    .tp-small-cards-wrapper {
+        padding: 1.3rem 0;
+        border-bottom: 1px solid black;
+    }
+    .tp-small-card {
+        display: flex;
+        flex-direction: row;
+    }
+    .tp-small-card-link:hover {
+        text-decoration: underline;
+    }
+    .tp-small-card-details {
+        padding: 0 0.8em;
+    }
+
+
+
+/* ------------------------------- */
     /* Section Two - Center */
     .sec-2-center {
         grid-row: 8 / 15;
@@ -306,16 +357,19 @@ body {
         height: 850px;
     }
 
+/* ------------------------------- */
     /* Section Three - Right */
     .sec-3-right {
         grid-row: 8 / 13;
         grid-column: 10 / 13;
         /* height: 550px; */
     }
+/* ------------------------------- */
     .sec-4-right {
         grid-row: 13 / 16;
         grid-column: 10 / 13;
     }
+/* ------------------------------- */
 
     /* News Section */
     /* News Big Story */
@@ -339,5 +393,7 @@ body {
         grid-row: 16 / 21;
         grid-column: 10 / 13;
     }
+
+
 
 } 
