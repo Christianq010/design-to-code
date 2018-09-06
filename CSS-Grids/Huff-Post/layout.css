@@ -1,4 +1,28 @@
 /* Mobile first by default */
+@charset "UTF-8";
+
+@font-face {
+    font-family: ProximaNovaregular;
+    src: url("font/MARK\ SIMONSON\ -\ PROXIMA\ NOVA\ REGULAR.OTF") format("opentype");
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    font-weight: bold;
+    src: url("font/MARK\ SIMONSON\ -\ PROXIMA\ NOVA\ BOLD.OTF") format("opentype");
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: "ProximaNovaregular", Arial, Geneva, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -13,15 +37,56 @@
     .navbar {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
-        height: 7em;
+        height: auto;
+        background-color: black;
+    }
+    .nav-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 8fr 3fr;
+        grid-template-rows: 50px;
+        grid-gap: 3px;
+
+    }
+    .menu-icn-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .menu-icn {
+        color: #666666;
+        width: 25px;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+    .menu-icn:hover {
+        color: #0DBE98;
+        cursor: pointer;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Main Logo */
     .logo img {
-        height: 4em;
-        width: 27em;
+        height: 2em;
+        width: 10em;
         display: block;
         margin: 1.5rem auto;
+    }
+    /* Toggle Icon for mobile */
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-icn {
+        display: none;
+    }
+    .language-selection {
+        display: none;
     }
 
     /* Main Section */
@@ -96,21 +161,112 @@
         grid-auto-rows: 25%;
         grid-auto-flow: dense;
     }
-
+/* ------------------------------- */
     /* Navbar */
     .navbar {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         /* height: 78px; */
+        /* Navbar styling */
+        height: auto;
+        background-color: black;
+        width: 100%;
+        /* position: fixed; */
+        top: 0;
+        margin-bottom: 0;
+        
     }
-    
+    .nav-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 8fr 2fr 1fr;
+        grid-template-rows: 78px;
+        grid-gap: 3px;
+
+    }
+    .menu-icn-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .menu-icn {
+        color: #666666;
+        width: 25px;
+        font-size: 1.75em;
+        padding-left: 1em;
+    }
+    .menu-icn:hover {
+        color: #0DBE98;
+        cursor: pointer;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img {
+        height: auto;
+        width: 225px;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons svg {
+        margin: 0 5px 0 0;
+    }
+    /* Toggle icon off on mobile */
+    .toggle-icn {
+        display: none
+    }
+    .language-selection {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .language-editions-text {
+        color: white;
+        font-size: 0.625rem;
+        letter-spacing: 1.3px;
+    }
+    .language-editions-text:hover{
+        color: #0DBE98;
+        cursor: pointer;
+    }
+/* ------------------------------- */
     /* Main Section */
+    /* Main Section background Image*/
     .main-content-wrapper {
         grid-row: 2 / 8;
         grid-column: 1 / -1;
         /* height: 480px; */
+        /* Styling */
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 480px;
     }
-
+    .main-content-overlay {
+        background-color: rgba(0,0,0,0.4);
+        background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent 100%);
+    }
+    /* Main Section Headline H1 */
+    .main-content-h1-w {
+        width: 980px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main-content-h1 {
+        font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+        color: white;
+        font-size: 5.125rem;
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    }
+    .main-content-h1:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: #0DBE98;
+    }
+/* ------------------------------- */
     /* Section One - Left */
     .sec-1-left {
         grid-row: 8 / 14;
