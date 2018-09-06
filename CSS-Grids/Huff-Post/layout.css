@@ -420,7 +420,45 @@ body {
         grid-row: 8 / 15;
         grid-column: 5 / 10;
         height: 850px;
+        background-color: #666666;
     }
+    /* Huffing Post Zone Center */
+    .hp-z-center {
+
+    }
+    .hp-z-center-box {
+
+    }
+    .hp-z-center-img-wrapper {
+    }
+    .hp-z-center-img {
+        max-width: 100%;
+    }
+    .hp-z-center-headline {
+
+    }
+    .hp-z-center-link {
+
+    }
+    .hp-z-center-text {
+
+    }
+    /* HP Zone Center Details */
+    .hp-z-center-details {
+
+    }
+    .hp-z-center-des {
+
+    }
+    .hp-z-center-des-link {
+
+    }
+    .hp-z-center-des-text {
+
+    }
+    .hp-z-center-author{}
+    .hp-z-center-author-link{}
+    .hp-z-center-author-text{}
 
 /* ------------------------------- */
     /* Section Three - Right */
@@ -428,11 +466,13 @@ body {
         grid-row: 8 / 13;
         grid-column: 10 / 13;
         /* height: 550px; */
+        /* background-color: #888888; */
     }
 /* ------------------------------- */
     .sec-4-right {
         grid-row: 13 / 16;
         grid-column: 10 / 13;
+        /* background-color: #424242; */
     }
 /* ------------------------------- */
 
