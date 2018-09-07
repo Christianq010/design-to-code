@@ -304,31 +304,26 @@ body {
     }
     
 /* ------------------------------ */
-    .sec-4-right {
-        grid-row: 18 / 21;
-        grid-column: 1 / -1;
-    }
-
     /* News Section */
     /* News Big Story */
     .news-big {
-        grid-row: 21 / 23;
+        grid-row: 18 / 21;
         grid-column: 1 / -1;
     }
     /* News story left */
     .news-left {
-        grid-row: 23 / 25;
+        grid-row: 21 / 23;
         grid-column: 1 / -1;
     }
     /* News story right */
     .news-right {
-        grid-row: 25 / 27;
+        grid-row: 23 / 25;
         grid-column: 1 / -1;
     }
 
     /* Trending Stories Section */
     .trending-stories {
-        grid-row: 27 / 29;
+        grid-row: 25 / 27;
         grid-column: 1 / -1;
     }
 
@@ -524,7 +519,7 @@ body {
     .sec-2-center {
         grid-row: 8 / 15;
         grid-column: 5 / 11;
-        height: 850px;
+        /* height: 850px; */
     }
     /* Huffing Post Zone Center */
     .hp-z-center {
@@ -637,34 +632,35 @@ body {
     }
 
 /* ------------------------------- */
-    .sec-4-right {
-        grid-row: 13 / 16;
-        grid-column: 11 / 14;
-        /* background-color: #424242; */
-    }
-/* ------------------------------- */
 
     /* News Section */
     /* News Big Story */
     .news-big {
         grid-row: 16 / 19;
-        grid-column: 2 / 10;
+        grid-column: 2 / 11;
+        background-color: #727272;
+
     }
     /* News story left */
     .news-left {
         grid-row: 19 / 21;
         grid-column: 2 / 6;
+        background-color: #2e2d2d;
+
     }
     /* News story right */
     .news-right {
         grid-row: 19 / 21;
-        grid-column: 6 / 10;
+        grid-column: 6 / 11;
+        background-color: #858585;
+
     }
 
     /* Trending Stories Section */
     .trending-stories {
-        grid-row: 16 / 21;
-        grid-column: 10 / 13;
+        grid-row: 16 / 19;
+        grid-column: 11 / 14;
+        background-color: #424242;
     }
 
 
