@@ -375,7 +375,7 @@ body {
 
   /* -------------------------------- */
   /* News story left */
-  .news-left {
+  .news-election-story-card {
     grid-row: 21 / 23;
     grid-column: 1 / -1;
   }
@@ -764,18 +764,58 @@ body {
   }
 
   /* --------------------------------- */
-  /* News story left */
-  .news-left {
+  /* Election News Story One */
+  .ne-one-story-card-wrapper {
     grid-row: 19 / 21;
-    grid-column: 2 / 6;
-    background-color: #2e2d2d;
+    grid-column: 2 / 7;
   }
+  .ne-one-story-card {
+    display: flex;
+    flex-direction: row;
+  }
+  .ne-one-story-card-img-wrapper{
+    width: 80%;
+  }
+  .ne-one-story-card-img {
+    max-width: 100%;
+  }
+  .ne-one-story-card-details {
+    padding: 0 1em 0 1em;
+  }
+  .ne-one-story-card-link {}
+  .ne-one-story-card-text {
+    font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+    font-size: 1.275rem;
+    line-height: 1.625rem;
+  }
+
+  /* -------------------------------- */
   /* News story right */
-  .news-right {
+  .ne-two-story-card-wrapper {
     grid-row: 19 / 21;
-    grid-column: 6 / 11;
-    background-color: #858585;
+    grid-column: 7 / 11;
   }
+  .ne-two-story-card {
+    display: flex;
+    flex-direction: row;
+  }
+  .ne-two-story-card-img-wrapper{
+    width: 120%;
+  }
+  .ne-two-story-card-img {
+    max-width: 100%;
+  }
+  .ne-two-story-card-details {
+    padding: 0 1em 0 1em;
+  }
+  .ne-two-story-card-link {}
+  .ne-two-story-card-text {
+    font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+    font-size: 1.275rem;
+    line-height: 1.625rem;
+  }
+
+  /* --------------------------------- */
 
   /* Trending Stories Section */
   .trending-stories {
