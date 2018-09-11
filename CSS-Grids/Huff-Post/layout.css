@@ -494,10 +494,61 @@ body {
   }
 
   /* ----------------------------------- */
+  /* Top Videos Section */
   .tv-section {
     grid-row: 27 / 29;
     grid-column: 1 / -1;
-    background-color: #696969;
+    margin: 1em 0;
+    padding: 1em;
+  }
+  .tv-section-title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #ffffff;
+  }
+  .tv-section-title-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    background: #333333;
+    color: #ffffff;
+    height: 2em;
+  }
+  .tv-section-title-text {
+    padding: 0 15px;
+    font-size: 1.0625rem;
+    font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+    letter-spacing: 0.12em;
+    padding-top: 3px;
+  }
+  .tv-section-content-box {}
+  .tv-section-content-box {}
+  .tv-box-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+  }
+  .tv-box-one {
+    cursor: pointer;
+  }
+  .tv-box-one-img-wrapper {
+    
+  }
+  .tv-box-one-img {
+    width: 100%;
+  }
+  .tv-box-one-text-link{}
+  .tv-box-one-text {
+    font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+    font-size: 1.275rem;
+    line-height: 1.625rem;
+  }
+  .tv-box-two {
+    cursor: pointer;
   }
   /* ----------------------------------- */
   .ts-section {
