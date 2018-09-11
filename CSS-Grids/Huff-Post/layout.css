@@ -851,9 +851,49 @@ body {
   /* --------------------------------- */
 
   /* Trending Stories Section */
-  .trending-stories {
+  .opinion-section {
     grid-row: 16 / 19;
     grid-column: 11 / 14;
     background-color: #424242;
   }
+
+  /* ----------------------------------- */
+  .tv-section {
+    grid-row: 21 / 24;
+    grid-column: 2 / 11;
+    background-color: #696969;
+  }
+  /* ----------------------------------- */
+  .ts-section {
+    grid-row: 21 / 25;
+    grid-column: 11 / 14;
+    background-color: #363636;
+  }
+  /* ----------------------------------- */
+  .itn-section {
+    grid-row: 24 / 27;
+    grid-column: 2 / 11;
+    background-color: #6d6d6d;
+  }
+  /* ----------------------------------- */
+  .partners-section {
+    grid-row: 27 / 31;
+    grid-column: 2 / 11;
+    background-color: #a8a8a8;
+  }
+  /* ----------------------------------- */
+  .video-section {
+    grid-row: 31 / 35;
+    grid-column: 2 / 11;
+    background-color: #8b8b8b;
+  }
+  /* ----------------------------------- */
+  .footer {
+    grid-row: 35 / 39;
+    grid-column: 1 / -1;
+    background-color: #000000;
+  }
+  /* ----------------------------------- */
+
+
 }
