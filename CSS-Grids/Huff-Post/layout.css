@@ -428,11 +428,69 @@ body {
   }
 
   /* --------------------------------- */
-  /* Trending Stories Section */
+  /* Opinion Section */
   .opinion-section {
     grid-row: 25 / 27;
     grid-column: 1 / -1;
-    background-color: #424242;
+  }
+  .os-section-wrapper {
+    padding: 0 0.5em;
+  }
+  .os-title-box {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 2.5em;
+  }
+  .os-title-flag {
+
+  }
+  .os-title-text-box {
+
+  }
+  .os-title-text {
+    font-family: "ProximaNovaBold", Arial, Geneva, sans-serif;
+    font-size: 1.0625rem;
+    font-style: italic;
+  }
+  .os-title-line-box {
+    padding: 1.5em 0.5em;
+  }
+  .os-title-line {
+    height: 3px;
+    background: #000000;
+  }
+  .os-card-wrapper {}
+  .os-card {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.8px solid #b6b6b6;
+    padding: 1em 0;
+  }
+  .os-card-img-wrapper {
+    height: 65px;
+    cursor: pointer;
+  }
+  .os-card-img {
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  .os-card-details-box {}
+  .os-card-details-link {
+  }
+  .os-card-details-text {
+    padding: 0 1em;
+  }
+  .os-card-author-link {}
+  .os-card-author-text {
+    padding: 0 1em;
+    margin: 1em 0;
+    font-family: "ProximaNovaLight", Arial, Geneva, sans-serif;
+    color: #757575;
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    font-weight: normal;
   }
 
   /* ----------------------------------- */
@@ -941,7 +999,7 @@ body {
     display: flex;
     flex-direction: row;
     border-bottom: 0.8px solid #b6b6b6;
-    padding: 1em;
+    padding: 1em 0;
   }
   .os-card-img-wrapper {
     height: 65px;
